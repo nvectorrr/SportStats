@@ -11,13 +11,13 @@ import javax.annotation.PostConstruct;
 public class TrainersDataLoader {
 
     @Autowired
-    private TrainersRepoImpl trainersRepo;
+    private TrainersRepoImpl trainersRepository;
 
     @PostConstruct
     public void setup() {
-        trainersRepo.save(new Trainer(121L, "Trainer one", 6457L));
-        trainersRepo.save(new Trainer(123L, "Trainer three", 6459L));
-        trainersRepo.save(new Trainer(122L, "Trainer two", 6458L));
+        trainersRepository.save(new Trainer(121L, "Trainer one", 6457L));
+        trainersRepository.save(new Trainer(123L, "Trainer three", 6459L));
+        trainersRepository.save(new Trainer(122L, "Trainer two", 6458L));
     }
 
 }

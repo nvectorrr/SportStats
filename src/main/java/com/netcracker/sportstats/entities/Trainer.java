@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import io.crnk.core.resource.annotations.JsonApiId;
 import io.crnk.core.resource.annotations.JsonApiResource;
 
-@JsonApiResource(type = "trainer")
+@JsonApiResource(type = "trainers")
 public class Trainer {
 
     @JsonApiId
@@ -16,7 +16,7 @@ public class Trainer {
     @JsonProperty
     private Long teamId;
 
-    public Trainer(){}
+    public Trainer() {}
 
     public Trainer(Long id, String name, Long teamId) {
         this.id = id;
