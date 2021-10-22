@@ -3,10 +3,16 @@ package com.netcracker.sportstats.entities;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import io.crnk.core.resource.annotations.JsonApiId;
 import io.crnk.core.resource.annotations.JsonApiResource;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
 @JsonApiResource(type = "trainers")
+@Entity
+@Table(name = "trainers")
 public class Trainer {
 
+    @Id
     @JsonApiId
     private Long id;
 
